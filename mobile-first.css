@@ -1,0 +1,208 @@
+@media screen and (min-width:750px){
+
+    nav{
+        background:#222;
+        color:#f1f1f1;
+        line-height:70px;
+        width:100%;
+    }
+    
+    nav .item{
+        list-style: none;
+        display:flex;
+        gap:30px;
+        justify-content: center;
+    }
+
+    nav .item .item-nav a{
+        text-decoration: none;
+        color: #f1f1f1;
+        font-size: 25px;
+        font-weight: 800;
+        transition:all .2s ease;
+    }
+
+    nav .item .item-nav a:hover{
+        color: #55bc4e;
+    }
+
+    .item-nav{
+        display:block;
+    }
+    
+    .menu-burger{
+        display:none;
+    }
+
+    .content-titre{
+        background-image: url('images/accueil.jpg');
+        background-size: cover;   
+        background-position: center;
+        height:100vh;
+        width:100%;
+        margin-bottom:20px;
+    }
+
+    .content-titre .titre{
+        text-align: center;
+        font-size:80px;
+    }
+    
+    .content-titre .sous-titre{
+        text-align: center;
+        font-size:40px;
+    }
+
+    .titre-programme{
+        font-size: 55px;
+        text-align:center;
+        padding:30px ;
+    }
+
+    .content-icon{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size:40px;
+    }
+
+    .fa-leanpub{
+        background:#55bc4e;
+        padding:15px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 0 #55bc4e;
+        color:#c0ea7e;
+        animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse{
+        100% {
+            box-shadow: 0 0 0 1.5rem rgba(14, 109, 57, 0);
+        }
+    }
+
+    .content-img{
+        position:relative;
+        padding:30px;
+    }
+
+    .programmes{
+        height:650px;
+        border-bottom: 2px dashed seagreen;
+    }
+
+    .texte-programmes{
+        margin:0 auto;
+        width:80%;
+    }
+
+    .img-programmes{
+        width:310px;
+        height:200px;
+    }
+
+    .img-programmes:nth-child(2){
+        position:absolute;
+        top:120px;
+    }
+
+    .img-programmes:hover{
+        transform:scale(1.4);
+    }
+
+    .qui-nous-sommes{
+        padding-top:50px;
+        height:100%;
+        border-bottom: 2px dashed seagreen;
+    }
+
+    .titre-qui-nous-sommes{
+        text-align: center;
+        font-size: 55px;
+    }
+
+    h4{
+        margin:10px;
+        font-size:25px;
+    }
+
+    .content-equipe{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        flex-direction: row;
+        gap:45px;
+        margin-top:40px;
+    }
+    
+    .people .img-teacher{
+        width:300px;
+        height:250px;
+        background-size: cover;
+        transition: transform .5s ease;
+    }
+
+    .titre-contact{
+        font-size:55px;
+        text-align: center;
+        filter: drop-shadow(2px 0px 2px grey);
+        padding:20px;
+    }
+
+    form{
+        margin:0 auto;
+    }
+
+    .content-form{
+        display:flex;
+    }
+
+    input{
+        display:block;
+        padding:10px;
+        width:800px;
+        margin:10px;
+        border:1px solid#222;
+        outline:none;
+        border-radius: 5px;
+    }
+
+    input:focus{
+        background: rgb(165, 218, 188);
+    }
+
+    textarea{
+        border:1px solid#222;
+        margin:10px;
+        resize:none;
+        outline:none;
+        padding:10px;
+        border-radius: 5px;
+        width:800px;
+        height:200px;
+    }
+
+    input[type="button"]{
+        width:150px;
+        display:block;
+        margin: 0 auto 20px;
+        background:seagreen;
+        border:none;
+        color:#f1f1f1;
+        cursor:pointer;
+        font-size:20px;
+    }
+
+    input[type="button"]:hover{
+        background:rgb(26, 107, 61);
+    }
+
+    footer{
+        background:#222;
+        color:#f1f1f1;
+        padding:20px;
+        font-size:18px;
+    }
+
+}
