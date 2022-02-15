@@ -43,7 +43,7 @@ nav{
 }
 
 .item-nav{
-    margin:10px 0px 5px;
+    margin:65px 0px 45px;
 }
 
 .active{
@@ -322,6 +322,10 @@ footer{
         background: url('images/accueil.jpg') no-repeat;
         width:100%;
         background-size: cover;
+    }
+
+    .item-nav{
+        margin:0px;
     }
 
     .texte-programmes{
