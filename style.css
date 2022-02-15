@@ -89,6 +89,14 @@ img{
     font-weight: 900;
 }
 
+.titre-evenement{
+    font-family: "Ruda", sans-serif;
+    font-size:55px;
+    padding:30px 0px;
+    font-weight: 900;
+    text-align: center;
+}
+
 .content-titre .sous-titre{
     font-family: "Ruda", sans-serif;
     margin-top:20px;
@@ -107,13 +115,30 @@ img{
     animation: pulse 1.5s infinite;
 }
 
+.inscription{
+    width:250px;
+    padding:20px;
+    display:block;
+    margin: 20px auto 0px;
+    background: #4cba4d;
+    font-size:18px;
+    font-family: "Ruda", sans-serif;
+    border:none;
+    border-radius:10px;
+}
+
+.inscription a{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
 @keyframes pulse{
     100% {
         box-shadow: 0 0 0 1rem rgb(255 255 255 / 1%);
     }
 }
 
-.fa-leanpub,.fa-bars{
+.fa-leanpub,.fa-bars,.fa-clipboard-list{
     color:#c0ea7e;
 }
 
@@ -146,6 +171,23 @@ img{
 
 .content-img img{
     width:100px; 
+}
+
+.item-nav-registration{
+    background: #019444;
+    height:50px;
+    font-size:15px;
+    line-height:50px;
+    display:block;
+    margin-top:5px;
+    padding:0px 10px;
+    border-radius: 10px;
+    display:none;
+}
+
+.item-nav-registration a{
+    color:#f1f1f1;
+    text-decoration: none;
 }
 
 .content-img img:hover{
@@ -296,10 +338,11 @@ input[type="button"]:hover{
 
 footer{
     background:#222;
-    color:#f1f1f1;
+    color:#c0ea7e;
     padding:10px;
     font-family: "Ruda", sans-serif;
-    font-size:12px;
+    position:absolute;
+    width:100%;
 }
 
 @media screen and (min-width:1280px){
@@ -343,6 +386,16 @@ footer{
         border-radius:50%;
         box-shadow: 0 0 0 0 #4cba4d;
         animation: pulse 1.5s infinite;
+    }
+
+    .inscription{
+        display:none;
+    }
+
+    .item-nav-registration{
+        display:block;
+        position:absolute;
+        right:10px;
     }
 
     #programmes{

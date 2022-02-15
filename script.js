@@ -5,6 +5,7 @@ console.log(listNav);
 
 btnMenu.addEventListener('click',()=>{
     listNav.classList.toggle('active')
+    console.log("ok");
 })
 
 menu.forEach(item=>{
