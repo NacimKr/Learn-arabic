@@ -83,8 +83,12 @@
     }
 
     .content-img{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:20px;
         position:relative;
-        padding:30px;
+
     }
 
     .programmes{
@@ -92,9 +96,15 @@
         border-bottom: 2px dashed seagreen;
     }
 
+    .content-programmes{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     .texte-programmes{
         margin:0 auto;
-        width:80%;
+        width:750px;
     }
 
     .img-programmes{
@@ -104,7 +114,7 @@
 
     .img-programmes:nth-child(2){
         position:absolute;
-        top:120px;
+        top:30px;
     }
 
     .img-programmes:hover{
@@ -161,8 +171,9 @@
     input{
         display:block;
         padding:10px;
-        width:800px;
-        margin:10px;
+        max-width:800px;
+        min-width:580px;
+        margin:10px auto;
         border:1px solid#222;
         outline:none;
         border-radius: 5px;
@@ -174,12 +185,13 @@
 
     textarea{
         border:1px solid#222;
-        margin:10px;
+        margin:10px auto;
         resize:none;
+        max-width:800px;
+        min-width:580px;
         outline:none;
         padding:10px;
         border-radius: 5px;
-        width:800px;
         height:200px;
     }
 
