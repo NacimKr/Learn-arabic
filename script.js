@@ -1,16 +1,14 @@
-const menuBurger = document.querySelector('.menu-burger');
-const listNav = document.querySelector('.item')
-const allNavigation = document.querySelectorAll('.item-nav')
+const btnMenu = document.querySelector('.menu-burger');
+const listNav = document.querySelector('.item');
+const menu = document.querySelectorAll('.item-nav');
+console.log(listNav);
 
-menuBurger.addEventListener('click',()=>{
-    allNavigation.forEach(nav=>{
-        nav.classList.toggle('active')
+btnMenu.addEventListener('click',()=>{
+    listNav.classList.toggle('active')
+})
 
-        if(nav.classList.contains('active')){
-            menuBurger.childNodes[1].className = "fa-solid fa-xmark"
-        }else{
-            menuBurger.childNodes[1].className = "fa-solid fa-bars"
-        }
+menu.forEach(item=>{
+    item.addEventListener('click',()=>{
+        listNav.classList.toggle('active')
     })
-
 })
