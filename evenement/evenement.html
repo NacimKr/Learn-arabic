@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription à l'ouverture</title>
+    <link rel="stylesheet" href="evenement.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Amiko&family=Baumans&family=Megrim&family=Quicksand:wght@300&family=Roboto:wght@100&family=Ruda&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+</head>
+<body>
+
+    <header id="accueil">
+        <nav>
+            <ul class="item">
+                <li class="item-nav"><a href="../index.html">Accueil</a></li>
+                <li class="item-nav"><a href="../index.html#programmes">Programmes</a></li>
+                <li class="item-nav"><a href="../index.html#qui-nous-sommes">Qui nous sommes</a></li>
+                <li class="item-nav"><a href="../index.html#contact">Nous contacter</a></li>
+            </ul>
+            <div class="menu-burger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="inscription-evenement">
+        <h1 class="titre-evenement">Ouverture de l'association</h1>
+        <form action="#">
+            <input type="text" placeholder="Votre nom ici" required>
+            <input type="text" placeholder="Votre prénom ici" required>
+            <input type="email" name="email" id="email" placeholder="Votre email ici" required>
+            <input type="text" placeholder="Votre profession ici" required>
+            <label for="">Quel est votre niveau en langue <span>lu écrit et parlé</span></label>
+            <select name="niveau" id="">
+                <label for="">Votre niveau</label>
+                <option value="">Débutant</option>
+                <option value="">Intermédiaire</option>
+                <option value="">Confirmé</option>
+            </select>
+            <textarea placeholder="Quelles sont vos attentes"></textarea>
+            <input type="button" value="Soumettre votre inscription">
+        </form>
+    </section>
+
+
+    <footer>
+        Développé par Nassim.K | Copyright © - Tous droits reservés
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

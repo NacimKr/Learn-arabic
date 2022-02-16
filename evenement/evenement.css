@@ -1,0 +1,251 @@
+*,::before,::after{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box
+}
+
+body{
+    background:linear-gradient(45deg,seagreen, #c0ea7e);
+    height:100vh;    
+}
+
+nav{
+    background:#222;
+    position:fixed;
+    height:65px;
+    width:100%;
+    z-index:50;
+}
+
+.item{
+    text-align: center;
+    font-family: "Ruda", sans-serif;
+    font-size:25px;
+    display:none;
+}
+
+.menu-burger{
+    color:#c0ea7e;
+    position:absolute;
+    top:10px;
+    right:10px;
+    font-size:40px;
+    cursor:pointer;
+}
+
+input, select,textarea{
+    display:block;
+    margin:10px auto;
+    padding:10px;
+    width:300px;
+    border:1px solid #333;
+    border-radius:10px;
+    outline:none;
+    background:#dff1da
+}
+
+.inscription-evenement{
+    font-family: "Ruda", sans-serif;
+    padding-top:80px;
+    padding-bottom:80px;
+}
+
+nav .item{
+    background:#222;
+}
+
+.item-nav{
+    margin:65px 0px 45px;
+}
+
+.item-nav a {
+    text-decoration:none;
+    color:#f1f1f1;
+}
+
+.active{
+    display:block;
+}
+
+input[type="button"]{
+    background:#019444;
+    border:none;
+    color:#f1f1f1;
+    font-family: "Ruda", sans-serif;
+    font-size:16px;
+    cursor:pointer;
+    width:250px;
+    border:2px solid #222;
+}
+
+input[type="button"]:hover{
+    background:rgb(23, 95, 54);
+}
+
+.titre-evenement{
+    text-align: center;
+    font-family: "Ruda", sans-serif;
+    font-size:35px;
+}
+
+label{
+    text-align: center;
+    font-family: "Ruda", sans-serif;
+    margin:30px auto 0px;
+    display:block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+span{
+    font-style: italic;
+    font-size: 10px;
+}
+
+footer{
+    background:#222;
+    color:#c0ea7e;
+    padding:10px;
+    font-family: "Ruda", sans-serif;
+    font-size:12px;
+    position: relative;
+    bottom:1px;
+    width:100%;
+}
+
+textarea{
+    resize:none;
+    height:280px;
+}
+
+@media screen and (min-width:1280px){
+
+    nav{
+        background:#222;
+        position:fixed;
+        height:65px;
+        width:100%;
+        z-index:50;
+    }
+
+    .item-nav{
+        margin:0px;
+    }
+    
+    .inscription-evenement{
+        font-family: "Ruda", sans-serif;
+        padding-top:80px;
+    }
+    
+    input, select,textarea{
+        display:block;
+        margin:10px auto;
+        padding:10px;
+        width:450px;
+        border:1px solid #333;
+        border-radius:10px;
+        outline:none;
+    }
+    
+    input[type="button"]{
+        background:#019444;
+        border:none;
+        color:#f1f1f1;
+        font-family: "Ruda", sans-serif;
+        font-size:16px;
+        cursor:pointer;
+    }
+    
+    input[type="button"]:hover{
+        background:rgb(23, 95, 54);
+    }
+    
+    label{
+        text-align: center;
+        font-family: "Ruda", sans-serif;
+        margin:30px auto 0px;
+        display:block;
+        font-size: 20px;;
+        font-weight: bold;
+    }
+
+    span{
+        font-style: italic;
+        font-size: 12px;
+    }
+    
+    textarea{
+        resize:none;
+        height:140px;
+    }
+    
+    .titre-evenement{
+        text-align: center;
+        font-family: "Ruda", sans-serif;
+        font-size:65px;
+    }
+    
+    footer{
+        background:#222;
+        color:#c0ea7e;
+        padding:10px;
+        font-family: "Ruda", sans-serif;
+        font-size:12px;
+        position: relative;
+        bottom:1px;
+        width:100%;
+    }
+
+    .item{
+        display:flex;
+        list-style: none;
+        font-family: "Ruda", sans-serif;
+        gap:20px;
+        justify-content: center;
+        line-height: 65px;
+        font-size:25px;
+    }
+
+    .menu-burger{
+        display:none;
+    }
+
+    .item-nav a {
+        text-decoration:none;
+        color:#f1f1f1;
+    }
+}
+
+@media screen and (max-width:884px){
+
+    footer{
+        background:#222;
+        color:#c0ea7e;
+        padding:10px;
+        font-family: "Ruda", sans-serif;
+        font-size:12px;
+        position: absolute;
+        bottom:1px;
+        width:100%;
+    }
+    
+}
+
+@media screen and (max-width:430px){
+
+    body{
+        background:linear-gradient(45deg,seagreen, #c0ea7e);
+        height:100vh;    
+    }
+
+    footer{
+        background:#222;
+        color:#c0ea7e;
+        padding:10px;
+        font-family: "Ruda", sans-serif;
+        font-size:12px;
+        position: relative;
+        bottom:1px;
+        width:100%;
+    }
+}
