@@ -5,7 +5,8 @@
 }
 
 body{
-    background:linear-gradient(45deg,seagreen, #c0ea7e);    
+    background:linear-gradient(45deg,seagreen, #c0ea7e);
+    height:100vh;    
 }
 
 nav{
@@ -96,6 +97,11 @@ label{
     font-weight: bold;
 }
 
+span{
+    font-style: italic;
+    font-size: 10px;
+}
+
 footer{
     background:#222;
     color:#c0ea7e;
@@ -103,7 +109,7 @@ footer{
     font-family: "Ruda", sans-serif;
     font-size:12px;
     position: relative;
-    bottom:10%;
+    bottom:1px;
     width:100%;
 }
 
@@ -162,6 +168,11 @@ textarea{
         font-size: 20px;;
         font-weight: bold;
     }
+
+    span{
+        font-style: italic;
+        font-size: 12px;
+    }
     
     textarea{
         resize:none;
@@ -180,7 +191,7 @@ textarea{
         padding:10px;
         font-family: "Ruda", sans-serif;
         font-size:12px;
-        position: absolute;
+        position: relative;
         bottom:1px;
         width:100%;
     }
@@ -203,5 +214,38 @@ textarea{
         text-decoration:none;
         color:#f1f1f1;
     }
+}
 
+@media screen and (max-width:884px){
+
+    footer{
+        background:#222;
+        color:#c0ea7e;
+        padding:10px;
+        font-family: "Ruda", sans-serif;
+        font-size:12px;
+        position: absolute;
+        bottom:1px;
+        width:100%;
+    }
+    
+}
+
+@media screen and (max-width:430px){
+
+    body{
+        background:linear-gradient(45deg,seagreen, #c0ea7e);
+        height:100vh;    
+    }
+
+    footer{
+        background:#222;
+        color:#c0ea7e;
+        padding:10px;
+        font-family: "Ruda", sans-serif;
+        font-size:12px;
+        position: relative;
+        bottom:1px;
+        width:100%;
+    }
 }
