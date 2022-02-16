@@ -47,7 +47,6 @@ input, select,textarea{
 .inscription-evenement{
     font-family: "Ruda", sans-serif;
     padding-top:80px;
-    padding-bottom:80px;
 }
 
 nav .item{
@@ -120,6 +119,11 @@ textarea{
 
 @media screen and (min-width:1280px){
 
+    body{
+        background:linear-gradient(45deg,seagreen, #c0ea7e);
+        height:100vh;    
+    }
+
     nav{
         background:#222;
         position:fixed;
@@ -191,8 +195,8 @@ textarea{
         padding:10px;
         font-family: "Ruda", sans-serif;
         font-size:12px;
-        position: relative;
-        bottom:1px;
+        position: absolute;;
+        bottom:0px;
         width:100%;
     }
 
